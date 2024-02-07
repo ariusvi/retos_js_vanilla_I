@@ -33,3 +33,17 @@ console.log("Bienvenido " + myName);
 const nombre = prompt("¿Cuál es tu nombre?")
 
 console.log("Bienvenido " + nombre);
+
+
+/*
+4. Haz una aplicación que calcule el área de un círculo (pi*R2). El radio se pedirá por teclado
+(recuerda pasar de String a double con parseDouble). Usa la constante PI.
+*/
+
+const PI = 3.1415;
+
+let r = parseFloat(prompt ("Escribe el radio aquí"));
+
+let area = PI * (r**2);
+
+console.log(area);
