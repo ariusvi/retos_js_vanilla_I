@@ -14,3 +14,13 @@ if(numA > numB) {
 } else if (numA === numB) {
     console.log("ambos números son iguales");
 }
+
+
+/*
+2.  Declara un String que contenga tu nombre, después muestra un mensaje de bienvenida
+por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenido Fernando”
+*/
+
+let myName = "Ana"
+
+console.log("Bienvenido " + myName);
