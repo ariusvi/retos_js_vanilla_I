@@ -73,3 +73,15 @@ let conIva = numero + (numero * 0.21)
 //IVA del 21% --> para calcularlo se multiplica por  0.21
 
 console.log("El precio de tu producto con IVA es" ,conIva) 
+
+
+/*
+7. Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
+*/
+
+let num = 1;
+
+while (num <= 100) {
+    console.log(num);
+    num++;
+}
