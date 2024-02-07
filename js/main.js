@@ -61,3 +61,15 @@ let answer = n % 2 == 0 ? "Si " : "No "
 
 console.log(answer, "es divisible entre 2");
 
+
+
+/*6. Lee un número por teclado que pida el precio de un producto (puede tener decimales) y
+calcule el precio final con IVA. El IVA será una constante que sera del 21% */
+
+let numero = parseFloat(prompt("Introduce el precio del producto"));
+
+let conIva = numero + (numero * 0.21)
+
+//IVA del 21% --> para calcularlo se multiplica por  0.21
+
+console.log("El precio de tu producto con IVA es" ,conIva) 
