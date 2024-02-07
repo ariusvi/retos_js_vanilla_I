@@ -25,3 +25,13 @@ por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenid
 let myName = "Ana";
 
 console.log("Bienvenido " + myName);
+
+
+/* 
+3. Modifica la aplicación anterior, para que nos pida el nombre que queremos introducir
+(recuerda usar prompt). 
+*/
+
+const nombre = prompt("¿Cuál es tu nombre?");
+
+console.log("Bienvenido " + nombre);
