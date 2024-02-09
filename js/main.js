@@ -94,3 +94,23 @@ while (num <= 100) {
 for (let i=1; i<=100; i++){
     console.log(i)
 }
+
+/*
+9. Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3. Utiliza el bucle que desees.
+*/
+
+for(let i=1; i<=100; i++){
+
+    if(i%2 === 0){
+        console.log(i, "es divisible entre 2")
+    }
+    else if(i%3 === 0){
+        console.log(i, "es divisible entre 3")
+    }
+    else if(i%2 === 0 && i%3 === 0){
+        console.log(i, "es divisible entre 2 y 3")
+    }
+    else{
+        console.log(i, "no es divisible ni por 2 ni por 3")
+    }
+}
