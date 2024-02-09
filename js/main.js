@@ -80,9 +80,17 @@ console.log("El precio de tu producto con IVA es" ,conIva)
 7. Muestra los números del 1 al 100 (ambos incluidos). Usa un bucle while.
 */
 
-let num = 1;
+let num = 0;
 
 while (num <= 100) {
     console.log(num);
     num++;
+}
+
+/*
+8. Haz el mismo ejercicio anterior con un bucle for.
+*/
+
+for (let i=1; i<=100; i++){
+    console.log(i)
 }
