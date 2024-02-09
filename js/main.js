@@ -8,7 +8,7 @@ funciona.
 let numA = 5;
 let numB = 10;
 
-if(numA > numB) {
+if (numA > numB) {
     console.log("el primer número es mayor que el segundo número");
 } else if (numA < numB) {
     console.log("el primer número es menor que el segundo");
@@ -44,9 +44,9 @@ console.log("Bienvenido " + nombre);
 
 const PI = 3.1415;
 
-let r = parseFloat(prompt ("Escribe el radio aquí"));
+let r = parseFloat(prompt("Escribe el radio aquí"));
 
-let area = PI * (r**2);
+let area = PI * (r ** 2);
 
 console.log(area);
 
@@ -56,7 +56,7 @@ console.log(area);
 debemos indicarlo
 */
 
-let n = parseFloat(prompt ("Indica el número"))
+let n = parseFloat(prompt("Indica el número"))
 
 let answer = n % 2 == 0 ? "Si " : "No "
 //operador ternario
@@ -73,7 +73,7 @@ let conIva = numero + (numero * 0.21)
 
 //IVA del 21% --> para calcularlo se multiplica por  0.21
 
-console.log("El precio de tu producto con IVA es" ,conIva) 
+console.log("El precio de tu producto con IVA es", conIva)
 
 
 /*
@@ -91,7 +91,7 @@ while (num <= 100) {
 8. Haz el mismo ejercicio anterior con un bucle for.
 */
 
-for (let i=1; i<=100; i++){
+for (let i = 1; i <= 100; i++) {
     console.log(i)
 }
 
@@ -99,18 +99,33 @@ for (let i=1; i<=100; i++){
 9. Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3. Utiliza el bucle que desees.
 */
 
-for(let i=1; i<=100; i++){
+for (let i = 1; i <= 100; i++) {
 
-    if(i%2 === 0){
+    if (i % 2 === 0) {
         console.log(i, "es divisible entre 2")
     }
-    else if(i%3 === 0){
+    else if (i % 3 === 0) {
         console.log(i, "es divisible entre 3")
     }
-    else if(i%2 === 0 && i%3 === 0){
+    else if (i % 2 === 0 && i % 3 === 0) {
         console.log(i, "es divisible entre 2 y 3")
     }
-    else{
+    else {
         console.log(i, "no es divisible ni por 2 ni por 3")
     }
 }
+
+/*
+10. Realiza una aplicación que nos pida un número de ventas a introducir, después nos
+pedirá tantas ventas por teclado como número de ventas se hayan indicado. Al final
+mostrará la suma de todas las ventas. Piensa que es lo que se repite y lo que no.
+*/
+let nVentas = parseInt(prompt("Cuantas"))
+total = 0
+
+for(let i = 0; 
+        i < nVentas;
+        i++){
+            total += parseInt(prompt("Dime cuánto ha costado"))
+        }
+console.log(total)
