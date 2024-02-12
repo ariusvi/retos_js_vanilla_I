@@ -165,3 +165,22 @@ más la contraseña y mostrará un mensaje diciendo “Enhorabuena”. Piensa bi
 condición de salida (3 intentos y si acierta sale, aunque le queden intentos)
 */
 
+const pasword = "contraseña"; /* definir la contraseña */
+
+const maxTry = 3; /*nº máximo de intentos */
+
+for (let trys = 0; trys < maxTry; trys++ ) { 
+    
+    let inputPasword = prompt("Introduzca contraseña:"); /*pide la contraseña*/
+
+    if (inputPasword === pasword) { /*verificar si la contraseña es correcta*/
+        console.log ("Contraseña correcta");
+        break; /*terminar el bucle*/
+    } else {
+        console.log ("Contraseña incorrecta, intentelo de nuevo");
+        if (trys === maxTry-1) {
+            console.log("Has superado el máximo de intentos. Intentelo más tarde")
+        }
+    }
+}
+
